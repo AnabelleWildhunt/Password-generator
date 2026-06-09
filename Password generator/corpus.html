@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ole&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animus.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="space">
+        <div class="grid space-el" id="grid-space-one">
+            <div><img class="wheel" id="wh1" src="gear.png" alt="icon-styled grey round gear"></div>
+            <div></div>
+            <div></div>
+            <div><img class="wheel" id="wh2" src="gear.png" alt="icon-styled grey round gear"></div>
+            <div><img class="wheel-big" id="wh3" src="gear.png" alt="icon-styled grey round gear"></div>
+            <div></div>
+            <div><img class="wheel" id="wh4" src="gear.png" alt="icon-styled grey round gear"></div>
+            <div></div>
+        </div>
+        <div class="flex-col" id="main-container">
+            <h1>Random password manufacture</h1>
+            <p>⚙ Greetings! We are honored to produce for you an unique password for your and your only use! ⚙</p>
+            <p>⚙ Just set the preferred format of the password and push this button in front of you. We'll take care of the rest... ⚙</p>
+            <div class="grid" id="options">
+                <label class="switch" for="password-numbers">
+                    <input id="password-numbers" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <p id="password-numbers-text">NUMBERS OFF</p>
+                <label class="switch" for="password-symbols">
+                    <input id="password-symbols" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <p id="password-symbols-text">SYMBOLS OFF</p>
+                <input id="password-lenght" type="text" placeholder="from 11 to 18">
+                <p>LENGHT</p>
+            </div>
+            <button id="pass-creator" onclick="verbum()">PUSH THE BUTTON</button>
+            <div id="passbox-container">
+                <div class="flex-col">
+                    <p>Prototype no. I</p>
+                    <div class="passbox">
+                        <p class="pass" id="pass-one" onclick="focusUnus()"></p>
+                    </div>
+                </div>
+                <div class="flex-col">
+                    <p>Prototype no. II</p>
+                    <div class="passbox">
+                        <p class="pass" id="pass-two" onclick="focusDuo()"></p>
+                    </div>
+                </div>
+            </div>
+            <p>⚙ Once manufactured, you can click on the password to copy it to your clipboard ⚙</p>
+        </div>
+        <div class="grid space-el" id="grid-space-two">
+            <div></div>
+            <div><img class="wheel wheel-left" id="wh5" src="gear.png" alt="icon-styled grey round gear"></div>
+            <div><img class="wheel-big" id="wh6" src="gear.png" alt="icon-styled grey round gear"></div>
+            <div></div>
+            <div><img class="wheel-big" src="gear.png" id="wh7" alt="icon-styled grey round gear"></div>
+            <div></div>
+            <div></div>
+            <div><img class="wheel" id="wh8" src="gear.png" alt="icon-styled grey round gear"></div>
+        </div>
+    </div>
+<input id="password-numbers-reversed" type="hidden" value="off">
+<input id="password-symbols-reversed" type="hidden" value="off">
+<script src="mens.js"></script>
+</body>
+</html>
