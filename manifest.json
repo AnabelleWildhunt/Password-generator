@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "⚙ Anabelle's random password manufacture ⚙",
+    "action": {
+        "default_popup": "corpus.html",
+        "default_icon": "gear.png"
+    }
+}
