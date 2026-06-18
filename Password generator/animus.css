@@ -58,6 +58,7 @@ button{
     background-color: var(--secondary-base);
     color: var(--tertiary-base);
     border: 3px solid black;
+    margin: 0 auto;
     padding: 0.5rem 2rem;
     font-size: 1.5rem;
     border-radius: 30px;
@@ -91,6 +92,7 @@ button:active{
     height: 34px;
     display: inline-block;
     position: relative;
+    margin: 0 auto;
 }
 
 .slider{
@@ -131,6 +133,7 @@ input:focus + .slider{
     height: 34px;
     border-radius: 34px;
     border: 3px solid black;
+    margin: 0 auto;
     background-color: var(--tertiary-base);
     color: var(--primary-base);
     font-family: var(--font-family);
@@ -161,6 +164,10 @@ input:focus + .slider{
     align-items: center;
 }
 
+.space-el-mobile{
+    
+}
+
 /* ----------- MAIN ----------- */
 
 #main-container{
@@ -175,6 +182,11 @@ input:focus + .slider{
     column-gap: 50px;
     row-gap: 10px;
     margin: 20px 0;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
 }
 
 #passbox-container{
@@ -244,10 +256,22 @@ input:focus + .slider{
 
 @media (max-width: 600px) {
 
+    h1{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
     .space-el{
-        width: 0;
-        height: 0;
-        opacity: 0;
+        display: none;
+        position: absolute;
+    }
+
+    #passbox-container{
+        /* flex-direction: column;
+        justify-content: center; */
     }
 
     #space{
@@ -255,6 +279,16 @@ input:focus + .slider{
     }
 
     #main-container{
-        margin: 0 auto;
+        width: 550px;
+        height: 100vh;
+        padding: 5px 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+    }
+
+    #options{
+        row-gap: 40px;
     }
 }
