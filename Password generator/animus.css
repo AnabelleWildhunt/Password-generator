@@ -75,6 +75,11 @@ button:active{
     color: var(--tertiary-shade);
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    appearance: none;
+}
+
 .switch input{
     width: 0;
     height: 0;

@@ -34,6 +34,7 @@ function longitudoDenota() {
         length = 15
     }
 }
+
 passNum.addEventListener("change", function() {
     passNumTxt.textContent = this.checked ? "NUMBERS ON" : "NUMBERS OFF";
     fiatCodex()
